@@ -53,6 +53,14 @@ app.get('/bad', (req, res) => {
     message: 'Something went wrong. Unable to fullfil the request.'
   });
 });
+
+app.get('/projects', (req, res) => {
+  res.render('projects', {
+    pageTitle: 'Projects Page'
+  });
+});
+
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

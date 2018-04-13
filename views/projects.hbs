@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    .projects {
+      display: flex; 
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .projects img {
+      margin-bottom: 25px;
+    }
+    img {
+      max-width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      .projects {
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
+      }
+    }
+  </style>
+  <title>{{ pageTitle }}</title>
+</head>
+<body>
+  {{> header }}
+
+  <h1>{{ pageTitle }}</h1>
+
+  <p>Some demo example projects</p>
+  <div class="projects">
+    <img src="//placeimg.com/401/400/tech" alt="">
+    <img src="//placeimg.com/402/400/tech" alt="">
+    <img src="//placeimg.com/403/400/tech" alt="">
+  </div>
+
+  {{> footer }}
+</body>
+</html>
